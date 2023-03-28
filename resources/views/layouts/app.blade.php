@@ -10,6 +10,8 @@
   @vite('resources/js/app.js')
 </head>
 <body>
+    @include('partials._navbar')
+
     <h1>Template title</h1>
     <p>
         Testo: <br />
