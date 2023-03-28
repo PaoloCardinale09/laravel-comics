@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Spatie\LaravelIgnition\Recorders\DumpRecorder\Dump;
 
 /*
 |--------------------------------------------------------------------------
@@ -43,3 +44,14 @@ Route::get('/movies', function () {
 Route::get('/tv', function () {
     return view('tv');
 })->name('tv');
+
+Route::get('/product/{index}', function ($index){
+    $comics = config('comicsdb');
+
+    
+    $comic = $comics[$index];
+    // dd($comic['title']);
+    return view('details', compact('comic'));
+    
+
+})->name('details');

@@ -8,16 +8,60 @@ ul {
     padding: 0;
 }
 
+a {
+    text-decoration: none;
+}
 // HEADER
 
 header {
-    height: 3rem;
     a {
         text-decoration: none;
     }
+    height: 3rem;
     .wrap-image {
         img {
-            height: 100%;
+            height: 2rem;
         }
     }
+}
+form {
+    height: 2rem;
+}
+
+// JUMBOTRON
+.jumbotron {
+    img {
+        width: 100%;
+        height: 17rem;
+        object-fit: cover;
+        object-position: top;
+    }
+}
+// MAIN
+main {
+    background-color: #1c1c1c;
+    .card-body {
+        background-color: #1c1c1c;
+    }
+    .current-series {
+        width: fit-content;
+        position: relative;
+        top: -2rem;
+        background-color: #0082f9;
+        padding: 0.5rem 1.5rem;
+        p {
+            margin: 0;
+        }
+    }
+}
+.comics-list img {
+    height: 11rem;
+    object-fit: cover;
+    object-position: top;
+}
+
+// DETAILS
+
+.thumb-details {
+    height: 10rem;
 }
