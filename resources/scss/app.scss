@@ -12,6 +12,9 @@ ul {
 
 header {
     height: 3rem;
+    a {
+        text-decoration: none;
+    }
     .wrap-image {
         img {
             height: 100%;

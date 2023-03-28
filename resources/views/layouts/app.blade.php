@@ -12,11 +12,12 @@
 <body>
     @include('partials._navbar')
 
-    <h1>Template title</h1>
-    <p>
-        Testo: <br />
-         @yield('paragrafo_principale')
-    </p>
+
+    <main>
+        @yield('main_content')
+    </main>
+
+    @include('partials._footer')
     
 </body>
 </html>

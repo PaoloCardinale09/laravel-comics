@@ -27,7 +27,9 @@ Route::get('/collectors', function () {
 })->name('collectors');
 
 Route::get('/comics', function () {
-    return view('comics');
+    $comics = config('comicsdb');
+
+    return view('comics', compact('comics'));
 })->name('comics');
 
 Route::get('/games', function () {
